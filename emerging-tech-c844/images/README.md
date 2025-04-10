@@ -26,7 +26,7 @@ They are referenced in the main report to validate:
 
 ## 📚 Usage
 
-These files are referenced in the associated Markdown task report found [here](../Task-1-network-asssessment).
+These files are referenced in the associated Markdown task report found [here](../task-1-network-assessment.md).
 
 ---
 
