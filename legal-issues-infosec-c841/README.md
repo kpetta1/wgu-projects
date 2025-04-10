@@ -17,9 +17,10 @@ Develops a Security Awareness Training and Education (SATE) program to address e
 
 ---
 
-## 📊 Included Artifacts
-- `Legal Issues in InfoSec (IHP4 T1)_Redacted.pptx` – Legal and compliance case presentation  
-- `Legal Issues in InfoSec (IHP4 T2)_Redacted.pptx` – Ethics and SATE program presentation
+## 🧾 Included Artifacts
+- [**Legal Issues in InfoSec (IHP4 T1)_Redacted.pptx**](./slides/Legal%20Issues%20in%20InfoSec%20(IHP4%20T1)_Redacted.pptx) – Legal and compliance case presentation  
+- [**Legal Issues in InfoSec (IHP4 T2)_Redacted.pptx**](./slides/Legal%20Issues%20in%20InfoSec%20(IHP4%20T2)_Redacted.pptx) – Ethics and SATE program presentation
+
 
 ---
 
