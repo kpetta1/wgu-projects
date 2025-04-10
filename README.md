@@ -9,7 +9,7 @@ The Digital Forensics course focuses on analyzing and investigating cybercrimes 
 
 #### **Projects & Deliverables:**
 - **Autopsy Forensic Tool Reports**: Various mock cases where evidence was gathered and analyzed for digital forensics.
-- **SQL Data Recovery**: Data retrieval from compromised systems and servers.
+- **Data Recovery**: Data retrieval from compromised systems and servers.
 
 > 📂 [Autopsy Forensics Report](task-1-autopsy-lab-report.md)
 
