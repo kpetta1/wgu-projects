@@ -5,7 +5,8 @@
 
 This project showcases my systems thinking coursework from WGU's D372 class. The assignments focus on analyzing complex problems, modeling interdependencies, and proposing holistic solutions across technical and societal contexts.
 
-> 🏆 **Award-Winning Work:** Task 1 was recognized with WGU’s *Systems Thinking Award (2024)* for excellence in applied systems modeling and analysis. ![Award Badge](./award.pdf)
+> 🏆 **Award-Winning Work**: Task 1 was recognized with WGU’s *Systems Thinking Award (2024)* for excellence in applied systems modeling and analysis.  
+🔗 [📄 Award Certificate (PDF)](../path-to-your-pdf/award-badge.pdf)
 
 ---
 
