@@ -1,64 +1,121 @@
-# 🔍 Autopsy Lab Report – Insider Threat Investigation
+# 🔬 Digital Forensics Lab Report – Autopsy Analysis (Task 2)
 
 **Author:** Kiarah Pettaway  
 **Coursework-Based Project — WGU D431**  
 
-> 📌 *This report is based on a fictional lab scenario developed as part of academic training through WGU's D431: Digital Forensics course. It was completed independently and is shared for educational and portfolio purposes only.*
+> 📌 *This report documents the results of a simulated forensic investigation performed using Autopsy. All findings are from fictional academic scenarios.*
 
 ---
 
-## 🧠 Summary
+## Objective
 
-This forensic lab involved analyzing a simulated disk image using Autopsy to investigate suspected insider activity involving the misuse of proprietary information. The objective was to recover artifacts, analyze user behavior, and determine whether confidential data was accessed or exfiltrated.
-
----
-
-## 🔧 Tools & Environment
-
-- Autopsy (Digital Forensics Suite)
-- Provided disk image (.001)
-- Windows 10 forensic analysis environment
+To perform forensic analysis on a suspect image using Autopsy, identify potential policy violations, and extract supporting evidence including deleted files and keyword hits.
 
 ---
 
-## 🔍 Methodology
+## Case Setup
 
-1. Created a new case in Autopsy and added the .001 disk image.
-2. Enabled ingest modules for file metadata, keyword search, web activity, and recent documents.
-3. Conducted keyword searches for terms like "confidential," "proprietary," and "trade secret."
-4. Reviewed deleted files, installed applications, user documents, and browser history.
-5. Noted time stamps, usernames, and file paths for correlation with suspicious behavior.
-6. Exported relevant evidence for reporting.
+- **Tool Used:** Autopsy 4.19.1
+- **Case Name:** JohnSmith_Investigation
+- **Evidence File:** `JSmith_Q1.001`
+- **Case Location:** `C:\Users\LabUser\Desktop\Evidence Files`
+- **Examiner Name:** 376284567  
 
----
-
-## 🗂️ Key Findings
-
-- **Keyword Search Hits:** Several instances of “confidential” and “proprietary” were found in documents recovered from the user profile.
-- **Deleted File Recovery:** Multiple deleted documents related to sensitive topics were recovered and linked to the suspect’s activity.
-- **Suspicious Artifacts:** The presence of cryptocurrency-related tools, anonymous browsing software, and file wiping utilities suggested an attempt to cover tracks.
-- **Policy Violations:** Recovered artifacts included documents marked “internal use only” located in unauthorized folders, suggesting a breach of company policy and possibly a violation of the NDA.
+![Autopsy Launch Screen](./images/1.png)
+![New Case Info](./images/2.png)
+![Optional Case Info](./images/3.png)
 
 ---
 
-## 🧾 Reporting & Recommendations
+## Adding Data Source
 
-- Present findings to HR, Legal, and Compliance teams for further action.
-- Recommend disabling access for the involved user(s) and auditing related systems.
-- Suggest conducting a wider scope investigation to detect any potential data exfiltration vectors (e.g., USB, cloud syncing tools).
+- **Source Path:** `C:\Users\LabUser\Desktop\Evidence Files\JSmith_Q1.001`
+- **Ingest Modules Used:**
+  - Recent Activity
+  - Hash Lookup
+  - File Type ID
+  - Encryption Detection
+  - Picture Analyzer
+  - Email Parser
+
+![Add Data Source](./images/4.png)
+![Select Source Type](./images/5.png)
+![Path Input](./images/6.png)
+![Ingest Modules](./images/7.png)
 
 ---
 
-## ✅ Skills Demonstrated
+## Analysis Results
 
-- Disk image analysis with Autopsy
-- Keyword and metadata search
-- Deleted file recovery and correlation
-- Reporting technical findings for non-technical stakeholders
-- Identification of insider threat behaviors
+### 📂 Deleted Files Discovered
+
+Autopsy detected multiple deleted files. Notably:
+
+- `Business_Strategy.pdf`
+- `Drilling Methodology.pdf`
+- `Oil Company data strategy.pdf`
+
+![Deleted Files Found](./images/9.png)
+
+### 🔍 Metadata for "Business_Strategy.pdf"
+
+- **Owner:** Mike Morris  
+- **Created/Modified:** 08/11/2021  
+- **Path:** `/img_JSmith_Q1.001/Business_Strategy.pdf`
+
+![PDF Metadata](./images/12.png)
+
+---
+
+## Keyword Searches
+
+Keywords used: `confidential`, `restricted`, `proprietary`, `classified`
+
+Each returned documents with business-sensitive content, suggesting possible insider threat activity:
+
+![Keyword Hits - Confidential](./images/13.png)
+![Keyword Hits - Restricted](./images/14.png)
+![Keyword Hits - Proprietary](./images/15.png)
+![Keyword Hits - Classified](./images/16.png)
+
+---
+
+## File Artifacts: Sensitive Business Documents
+
+Recovered files show unauthorized possession of:
+- Energy R&D strategies
+- Confidential drilling techniques
+- Data suggesting export of documents
+
+![Business Strategy Preview](./images/20.png)
+![Oil Strategy Confidential Preview](./images/19.png)
+
+---
+
+## Additional Findings
+
+Two suspicious browser artifacts:
+- "How to buy and pay with bitcoin anonymously"
+- "The best way to hide something is in plain sight: Crypto laundering"
+
+Indicating a possible attempt to evade tracking or monetize stolen data.
+
+![Bitcoin Anon](./images/21.png)
+![Crypto Laundering](./images/23.png)
+
+---
+
+## Conclusion
+
+Autopsy analysis uncovered clear signs of:
+- Confidential document access and deletion
+- Keywords suggesting sensitive internal data
+- Evidence of interest in anonymizing and laundering information
+
+🔐 **Recommendation:** Escalate to security and legal teams for further review and disciplinary action.
 
 ---
 
 **Contact:**  
-Kiarah Pettaway   
-[LinkedIn](https://www.linkedin.com/in/kiarah-pettaway/) • kiatan@duck.com
+Kiarah Pettaway  
+[LinkedIn](https://www.linkedin.com/in/kiarah-pettaway) • kiatan@duck.com
